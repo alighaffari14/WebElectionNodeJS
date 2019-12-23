@@ -1,0 +1,34 @@
+<div class="row">
+    <div class="col-md-12 marginTop20">
+        <input type="button" ng-click="export()" class="btn btn-default btn-block" value="Export To Excel">
+    </div>
+    <div class="col-md-12 marginTop20">
+        <table data-tableName="Result Table" class="table2excel table table-bordered">
+            <tr>
+                <th>#</th>
+                <th>SID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>President</th>
+                <th>General Secretary</th>
+                <th>Treasurer</th>
+                <th>Key</th>
+                <th>Date</th>
+                <th>IP</th>
+            </tr>
+            <tr ng-repeat="result in resultList">
+                <td>{{$index+1}}</td>
+                <td>{{result.sid}}</td>
+                <td>{{result.name}}</td>
+                <td>{{result.email}}</td>
+                <td>{{result.president.name}}</td>
+                <td>{{result.general_secretary.name}}</td>
+                <td>{{result.treasurer.name}}</td>
+                <td>{{result.key.key}}</td>
+                <td>{{result.date | date:"MM/dd/yyyy 'at' h:mma"}}</td>
+                <td>{{result.ip}}</td>
+            </tr>
+
+        </table>
+    </div>
+</div>

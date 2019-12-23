@@ -1,0 +1,33 @@
+.loading {
+    position:fixed;
+    top: 0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index: 100000;
+    display:none;
+    margin:0;
+    padding:0;
+}
+
+.loading > div > figure {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.show > div {
+    display: table;
+    width: 100%;
+    height: 100%;
+
+    background: rgb(249,252,247); /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(249,252,247,1) 0%, rgba(245,249,240,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(249,252,247,1)), color-stop(100%,rgba(245,249,240,1))); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(249,252,247,1) 0%,rgba(245,249,240,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  rgba(249,252,247,1) 0%,rgba(245,249,240,1) 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  rgba(249,252,247,1) 0%,rgba(245,249,240,1) 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center,  rgba(249,252,247,1) 0%,rgba(245,249,240,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9fcf7', endColorstr='#f5f9f0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    /*background-color: rgba(255, 255, 255, 1.0);*/
+}

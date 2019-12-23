@@ -1,0 +1,64 @@
+/*=====================*/
+/*     CSS override   */
+/*=====================*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.row{
+    margin: 0;
+    padding: 0;
+}
+.jumbotron {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    background-color: #f8f8f8;
+}
+.acm-acmkiet-logo{
+    width: 100px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.heading-header{
+    display: inline-block;
+    color: #333;
+    font-size: x-large;
+    font-weight: bold;
+}
+.guid{
+    font-size: medium;
+    color: #333;
+    margin-top: 20px;
+    text-align: center;
+}
+.guid q{
+   font-weight: bold;
+}
+
+.candidateAlign{
+}
+.candidateBox{
+    margin: 6px 20px 6px 20px;
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid rgba(0,0,0,.3);
+    border-radius: 5px;
+}
+.candidate-caption{
+    text-align: center;
+    font-weight: bold;
+}
+.candidateImg{
+    width:150px;
+    height: 150px;
+}
+.footer{
+    height: 80px;
+    background-color: #333;
+    margin-top: 30px
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ACM-KIET Internal Election">
+    <meta name="author" content="Arhan Shahid">
+
+    <!--Website Favicon-->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <title>Internal Election | ACM-KIET</title>
+
+    <!-- CSS Libraries -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/toaster.css" rel="stylesheet">
+    <link href="css/loading.css" rel="stylesheet">
+    <link href="css/general-css-rules.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/main.css" rel="stylesheet">
+
+
+    <!-- JavaScript Libraries -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="jquery.table2excel.min.js"></script>
+
+
+
+    <!-- HTML5 Shim and Respond.scripts IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.scripts doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.scripts"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.scripts/1.4.2/respond.min.scripts"></script>
+    <![endif]-->
+</head>
+
+<body ng-app="app">
+
+<toaster-container toaster-options="{'time-out': 3000}"></toaster-container>
+
+<div class="container-fluid" ui-view></div>
+
+<page-loading></page-loading>
+
+<!--Ap JS-->
+<script src="scripts/app.js"></script>
+<!--Directives-->
+<script src="scripts/directive/pageLoading.js"></script>
+<!--Services-->
+<script src="scripts/services/toasterService.js"></script>
+<script src="scripts/services/loadingFactory.js"></script>
+<script src="scripts/services/requestService.js"></script>
+<!--Controllers-->
+<script src="scripts/controllers/viewController.js"></script>
+<script src="scripts/controllers/resultController.js"></script>
+
+</body>
+
+</html>

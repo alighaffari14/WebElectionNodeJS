@@ -1,0 +1,97 @@
+<div ng-include src="'partials/navbar.html'"></div>
+<div class="col-md-12">
+
+    <div class="col-md-offset-2 col-md-8">
+        <p class="guid">
+            We are voting for the designation of <q>President, General Secretary and Treasurer</q>. Candidates are
+        </p>
+    </div>
+    <div class="col-md-offset-2 col-md-8">
+        <div class="candidateBox">
+            <img src="img/candidates/fawad.jpg" class="candidateImg img-responsive">
+            <p class="candidate-caption">Fawad Tariq</p>
+        </div>
+        <div class="candidateBox">
+            <img src="img/candidates/ibrahim.jpg" class="candidateImg img-responsive">
+            <p class="candidate-caption">Ibrahim Jamal</p>
+        </div>
+        <div class="candidateBox">
+            <img src="img/candidates/misbah.jpg" class="candidateImg img-responsive">
+            <p class="candidate-caption">Misbah Mubeen</p>
+        </div>
+        <div class="candidateBox">
+            <img src="img/candidates/naveed.jpg" class="candidateImg img-responsive">
+            <p class="candidate-caption">Naveed Ahmed</p>
+        </div>
+
+    </div>
+    <div class="col-md-offset-2 col-md-8">
+        <div class="candidateBox">
+            <img src="img/candidates/rauf.jpg" class="candidateImg img-responsive">
+            <p class="candidate-caption">Rauf Khan</p>
+        </div>
+        <div class="candidateBox">
+            <img src="img/candidates/shaheer.jpg" class="candidateImg img-responsive">
+            <p class="candidate-caption">Shaheer Hassan</p>
+        </div>
+        <div class="candidateBox">
+            <img src="img/candidates/umair.jpg" class="candidateImg img-responsive">
+            <p class="candidate-caption">Umair Ali</p>
+        </div>
+    </div>
+    <div class="col-md-offset-2 col-md-8 marginTop20">
+        <p class="text-danger">
+            <strong>Note :</strong>  you can cast one vote per key (key provided by acm election committee). After submitting your vote your key no longer valid.
+        </p>
+    </div>
+    <div  class="col-md-offset-2 col-md-8 marginTop20">
+        <div class="form-group">
+            <label for="sid">Student ID</label>
+            <input type="text" id="sid" class="form-control" ng-model="data.sid" placeholder="Please Enter Your Kiet Student ID">
+        </div>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" class="form-control" ng-model="data.name" placeholder="Please Enter Your Name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="form-control" ng-model="data.email" placeholder="Please Enter EMail">
+        </div>
+        <div class="form-group">
+            <label for="key">Key</label>
+            <input type="password" id="key" class="form-control" ng-model="data.key" placeholder="Please Enter Your secret key (provided by acm election committee)">
+        </div>
+        <div class="form-group">
+            <label for="chairman">Vote for President</label>
+            <select id="chairman" class="form-control" ng-model="data.president">
+                <option value="" selected disabled>Please Select Candidate</option>
+                <option ng-value="candidate._id" ng-repeat="candidate in candidateList">{{candidate.name}}</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="general_secretary">Vote for General Secretary</label>
+            <select id="general_secretary" class="form-control" ng-model="data.general_secretary">
+                <option value="" selected disabled>Please Select Candidate</option>
+                <option ng-value="candidate._id" ng-repeat="candidate in candidateList">{{candidate.name}}</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="deputy_secretary">Vote for Treasurer</label>
+            <select id="deputy_secretary" class="form-control" ng-model="data.treasurer">
+                <option value="" selected disabled>Please Select Candidate</option>
+                <option ng-value="candidate._id" ng-repeat="candidate in candidateList">{{candidate.name}}</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <input type="button"
+                   value="Submit"
+                   ng-click="submit()"
+                   ng-disabled="submitDisabled"
+                   class="btn btn-info btn-lg pull-right">
+        </div>
+    </div>
+
+</div>
+<div ng-include src="'partials/footer.html'"></div>
