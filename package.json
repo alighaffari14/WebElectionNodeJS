@@ -11,7 +11,7 @@
     "ejs": "^2.5.6",
     "errorhandler": "^1.4.2",
     "express": "^4.15.2",
-    "method-override": "^2.3.5",
+    "method-override": "^2.3.10",
     "mongoose": "^4.3.4",
     "morgan": "^1.8.1",
     "q": "^1.4.1",
